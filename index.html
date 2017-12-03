@@ -5,56 +5,149 @@
   <meta charset="utf-8">
   <title>Front End Assignment</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 </head>
 
 
 <body>
     <header>
-      <h1>Placeholder Text</h1>
+      <div class="wrapper">
+        <!-- Placeholder text main logo with . recoloured -->
+        <h1>Placeholder Text<span class="color">.</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#main-img">Home</a></li>
+            <li><a href="#features">Teams</a></li>
+            <li><a href="#primary-content">Events</a></li>
+            <li><a href="#secondary-content">Stats</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-  <main class="tab_container">
-    <input id="tab1" type="radio" name="tabs" checked>
-    <!-- the *label* for the radio button forms the clickable tabs -->
-    <label for="tab1"><i class="fa fa-code"></i><span>Home</span></label>
+    <div id="main-img">
+      <div class="wrapper">
+        <h2><Strong>CSGO, ESports</strong><br/>
+        An information site.</h2>
+      </div>
+    </div>
 
-    <input id="tab2" type="radio" name="tabs">
-    <label for="tab2"><i class="fa fa-hashtag"></i><span>Xbox One</span></label>
+    <div id="features">
+      <div class="wrapper">
+        <article>
+          <h3>Teams</h3>
+        </article>
+        <ul>
+            <li class="feature-1">
+              <h4>Sample text</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="feature-2">
+              <h4>Sample text2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="feature-3">
+              <h4>Sample text3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
 
-    <input id="tab3" type="radio" name="tabs">
-    <label for="tab3"><i class="fa fa-bug"></i><span>PlayStation 4</span></label>
+    <div id="primary-content">
+      <div class="wrapper">
+        <article>
+          <h3>Upcoming LAN Event</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VgzqbE3EwDk" frameborder="0" allowfullscreen></iframe>
+            </article>
+      </div>
+    </div>
 
-    <!-- content for tab1: -->
-    <section id="content1" class="tab-content">
-      <header>
-        <h2>Home</h2>
-      </header>
+    <div id="secondary-content">
+      <div class="wrapper">
+        <article>
+          <h3>Stats</h3>
+        </article>
+        <article></article>
+        <article></article>
 
-      <footer>
-        <p><a href="#">add a link to an HTML5 resource here</a></p> 
-      </footer>
-    </section>
-    <!-- content for tab2: -->
-    <section id="content2" class="tab-content">
-      <header>
-        <h2>XBOX</h2>
-      </header>
 
-      <footer>
-        <p><a href="#">add a link to an HTML5 resource here</a></p>
-      </footer>
-      </section>
-      <!-- content for tab 3: -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+      <p><a href="#top">Click here to return to top</a></p>
+      </div>
+    </footer>
+
+
+
+    <!-- <div id="container"</div>
+      <main class="tab_container">
+        <input id="tab1" type="radio" name="tabs" checked>
+     the *label* for the radio button forms the clickable tabs
+        <label for="tab1"><i class="fa fa-code"></i><span>Home</span></label>
+
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2"><i class="fa fa-hashtag"></i><span>Events</span></label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3"><i class="fa fa-bug"></i><span>Teams</span></label>
+
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4"><i class="fa fa-bug"></i><span>Stats</span></label>
+
+     content for tab1:
+        <section id="content1" class="tab-content">
+          <header>
+            <h2>Home</h2>
+          </header>
+
+          <footer>
+            <p><a href="#">add a link to an HTML5 resource here</a></p>
+          </footer>
+        </section>
+
+
+    content for tab2:
+        <section id="content2" class="tab-content">
+          <header>
+            <h2>Events</h2>
+          </header>
+
+            <footer>
+              <p><a href="#">add a link to an HTML5 resource here</a></p>
+            </footer>
+        </section>
+
+
+      content for tab 3:
       <section id="content3" class="tab-content">
         <header>
-          <h2>PS4</h2>
+          <h2>Teams</h2>
         </header>
 
         <footer>
           <p><a href="#">add a link to an HTML5 resource here</a></p>
         </footer>
       </section>
-  </main>
+
+      content for tab4:
+          <section id="content4" class="tab-content">
+            <header>
+              <h2>Stats</h2>
+            </header>
+
+              <footer>
+                <p><a href="#">add a link to an HTML5 resource here</a></p>
+              </footer>
+          </section> -->
+
+
+
 </body>
 </html>

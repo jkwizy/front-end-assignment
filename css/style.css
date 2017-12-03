@@ -56,7 +56,7 @@ li:last-child {
   border-bottom: thick dotted #ff0000;
 }
 
-dt { 
+dt {
   font-weight: bold;
 }
 dd {
@@ -65,7 +65,7 @@ dd {
 /*
   Hides the radio buttons ('input' tags) themselves, but not
   their labels, which form the tabs.
-  
+
   Also sets styles for the section tags and hides them.
 */
 input,
@@ -93,12 +93,12 @@ label {
   display: block;
   box-sizing: border-box;
   float: left;
-  width: 33.33%;
-  color: #888;
+  width: 25%;
+  color: white;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: #eee;
+  background: #ad1c1c;
   line-height: 3em;
   border-right: 1px solid #444;
 }
@@ -111,28 +111,29 @@ label:last-child {
 }
 
 /*
-  The radio button label tags form the 'tabs' used to show the 
-  sections - when clicked, the input tag 'checked' attribute 
+  The radio button label tags form the 'tabs' used to show the
+  sections - when clicked, the input tag 'checked' attribute
   becomes true, so the section tags with IDs 'content1-3' can
   be targeted *in relation* to each radio button.
 
   This changes the display of specific section elements (with
-  IDs 'content1-3') from 'none' to 'block', but *only when* the 
-  associated and preceding (~) radio button becomes 'checked'. 
+  IDs 'content1-3') from 'none' to 'block', but *only when* the
+  associated and preceding (~) radio button becomes 'checked'.
 
   For the CSS3 ~ selector see:
   http://www.w3schools.com/cssref/sel_gen_sibling.asp
 */
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
-#tab3:checked ~ #content3 {
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
   display: block;
 }
 /*
   Styles label elements (tabs) *only* when they're 'checked'
 */
 [id^="tab"]:checked + label {
-  background: #ccc;
+  background: #fff;
   color: #222;
 }
 [id^="tab"]:checked + label .fa {
@@ -156,7 +157,7 @@ label:last-child {
 	transform: translateY(2px);
 	border-bottom-color: #88c;
 	color: white;
-	
+
 }
 
 /* --------- Basic animation --------- */
@@ -171,14 +172,14 @@ label:last-child {
 
 @keyframes fadeIn {
 
-  0% { 
+  0% {
   	opacity: 0;
   }
 
-  100% { 
+  100% {
   	opacity: 1;
   }
-  
+
 }
 
 
@@ -214,5 +215,3 @@ label:last-child {
     display: inline;
   }
 }
-
-
