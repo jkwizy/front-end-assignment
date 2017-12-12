@@ -1,26 +1,37 @@
 "use strict";
 
 function initMap() {
-  let leicester = {lat: 52.6333, lng: -1.1333};
-  let dmu = {lat: 52.629311, lng: -1.137836};
-  let uol = {lat: 52.620956, lng: -1.124049};
+  let odense = {lat: 55.371381, lng: 10.449028};
+  let elmiavagen = {lat: 57.787591, lng: 14.230723};
+  let london = {lat: 51.503038, lng: 0.003154};
+  let katowice = {lat: 50.266053, lng: 19.02537};
   let mapDemo = document.getElementById("map");
 
   // this sets the default location for when the map is first loaded
   let map = new google.maps.Map(mapDemo, {
-    zoom: 13,
-    center: leicester
+    zoom: 4,
+    center: odense
   });
 
   // these set different markers you want to show on your map
-  let markerDMU = new google.maps.Marker({
-    position: dmu,
+  let markerOdense = new google.maps.Marker({
+    position: odense,
     map: map,
-    title: 'The Good Guys'
+    title: 'Pro League Season 6 Finals'
   });
-  let markerUoL = new google.maps.Marker({
-    position: uol,
+  let markerElmiavagen = new google.maps.Marker({
+    position: elmiavagen,
     map: map,
-    title: 'The Bad Guys'
+    title: 'Dreamhack Winter 2017'
   });
+	let markerKatowice = new google.maps.Marker({
+	position: katowice,
+	map: map,
+	title: 'IEM Katowice 2018'
+});
+	let markerLondon = new google.maps.Marker({
+	position: london,
+	map: map,
+	title: 'ESEA Pro League Season 3 Finals'
+});
 }

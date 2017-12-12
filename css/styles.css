@@ -118,6 +118,7 @@ header nav ul li a {
 #teams ul {
     margin: 80px 0;
 }
+
 #teams ul li {
     width: 30%;
     padding-top: 140px;
@@ -126,13 +127,22 @@ header nav ul li a {
     text-align: center;
 }
 #teams ul li.feature-1 {
-    background: url('../img/feature-1.jpg') no-repeat top center;
+    background: url('../img/fnatic-logo.jpg') no-repeat top center;
 }
 #teams ul li.feature-2 {
-    background: url('../img/feature-1.jpg') no-repeat top center;
+    background: url('../img/vp-logo.jpg') no-repeat top center;
 }
 #teams ul li.feature-3 {
-    background: url('../img/feature-1.jpg') no-repeat top center;
+    background: url('../img/navi-logo-resized.jpg') no-repeat top center;
+}
+#teams ul li.feature-4 {
+    background: url('../img/liquid-logo.jpg') no-repeat top center;
+}
+#teams ul li.feature-5 {
+    background: url('../img/penta-logo.jpg') no-repeat top center;
+}
+#teams ul li.feature-6 {
+    background: url('../img/nip-logo.jpg') no-repeat top center;
 }
 
 #events {
