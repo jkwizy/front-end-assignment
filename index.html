@@ -7,33 +7,48 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome icon cheatsheet: http://fontawesome.io/cheatsheet/ -->
 </head>
 
 
 <body>
-    <header>
-      <div class="wrapper">
-        <!-- Placeholder text main logo with . recoloured -->
-        <h1>Placeholder Text<span class="color">.</span></h1>
-        <nav>
-          <ul>
-            <li><a href="#main-img">Home</a></li>
-            <li><a href="#teams">Teams</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#pictures">Pictures</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-          </ul>
-        </nav>
+<header>
+  <nav>
+    <div class="navWide">
+      <div class="wideDiv">
+        <a href="#main-img">Home</a>
+        <a href="#teams">Teams</a>
+        <a href="#events">Events</a>
+        <a href="#videos">Videos</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#contact-us">Contact Us</a>
       </div>
-    </header>
+    </div>
+    <div class="navNarrow">
+      <i class="fa fa-bars fa-2x"></i>
+      <h4>Menu</h4>
+      <div class="narrowLinks hidden">
+        <a href="#main-img">Home</a>
+        <a href="#teams">Teams</a>
+        <a href="#events">Events</a>
+        <a href="#videos">Videos</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#contact-us">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
 
     <div id="main-img">
       <div class="wrapper">
-        <h2><Strong>CSGO, ESports</strong><br/>
-        An information site.</h2>
+        <h2><Strong>CSGO<span class="color">,</span> ESports<span class="color">.</span></strong><br/>
+        An information site<span class="color">.</span></h2>
       </div>
     </div>
+
 
     <div id="teams">
       <div class="wrapper">
@@ -65,7 +80,7 @@
               <h4>Ninjas in Pajamas</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
             </li>
-            <div class="clear"></div>
+
         </ul>
       </div>
     </div>
@@ -80,12 +95,43 @@
       </div>
     </div>
 
-    <div id="videos">
+    <div id="videos" class="tab_container">
       <div class="wrapper">
         <article>
           <h3>Hot Videos!</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgzqbE3EwDk" frameborder="0" allowfullscreen></iframe>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1"><i class="fa fa-youtube-play"></i><span>Video 1</span></label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2"><i class="fa fa-youtube-play"></i><span>Video 2</span></label>
+
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3"><i class="fa fa-youtube-play"></i><span>Video 3</span></label>
+
+            <!-- content -->
+            <!-- First tab-->
+            <section id="content1" class="tab-content">
+              <header>
+                <h2>Video 1</h2>
+              </header>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VgzqbE3EwDk"></iframe>
+            </section>
+            <!-- Second tab-->
+            <section id="content2" class="tab-content">
+              <header>
+                <h2>Video 2</h2>
+              </header>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KPxJ6RR40ZU"></iframe>
+          </section>
+          <!-- Third tab-->
+          <section id="content3" class="tab-content">
+            <header>
+              <h2>Video 3</h2>
+            </header>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KPxJ6RR40ZU"></iframe>
+        </section>
+
           </article>
         </div>
       </div>
@@ -260,5 +306,6 @@
 
           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh7ZgdAY37Trblw09wJTiuQNHA6_LhWvQ&callback=initMap"></script>
           <script src="js/mapscripts.js"></script>
+          <script src="js/nav.js"></script>
 </body>
 </html>
