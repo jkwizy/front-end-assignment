@@ -65,6 +65,7 @@ small {
 header {
     height: 50px;
     margin-bottom: 10px;
+    background: white;
 }
 
 nav {
@@ -72,7 +73,14 @@ nav {
 	overflow: hidden;
 	padding: 1em;
 	border-bottom: 1px solid #02b8dd;
+  z-index: 99999 !important;
+  position: absolute;
+  margin: 0 auto 0 auto;
+  width: 85%
 }
+
+
+
 
 nav .navWide {
 	display: none;
@@ -88,7 +96,7 @@ nav .navWide .wideDiv a {
   text-decoration: none;
   font-weight: bold;
 	display: inline-block;
-	padding: 0 2em;
+  padding: 0 2em;
 }
 
 nav	.navNarrow i {
@@ -105,8 +113,18 @@ nav .navNarrow .narrowLinks a {
 	float: left;
 	clear: left;
   padding: 5px;
+  margin-top: 10px;
 }
 
+#iframe1 {
+  width: 100%;
+}
+#iframe2 {
+  width: 100%;
+}
+#iframe3 {
+  width: 100%;
+}
 
 nav .navNarrow h4 {
   margin: 0 0 0 60px;
@@ -114,6 +132,10 @@ nav .navNarrow h4 {
 
 .hidden {
   display: none;
+}
+
+#main-img {
+
 }
 
 #main-img h2 {
@@ -144,6 +166,7 @@ nav .navNarrow h4 {
 }
 #teams ul li.feature-1 {
     background: url('../img/fnatic-logo.jpg') no-repeat top center;
+
 }
 #teams ul li.feature-2 {
     background: url('../img/vp-logo.jpg') no-repeat top center;
@@ -224,19 +247,20 @@ nav .navNarrow h4 {
 
 
 
-#contact-us {
+#updates {
     padding: 5px 0;
     text-align: center;
 }
-#contact-us article {
+#updates article {
   padding-top: 10px;
 }
-#contact-us h3 {
+#updates h3 {
     display: block;
     margin: 0 auto 20px auto;
     border-bottom: 1px solid #02b8dd;
     padding: 0 0 20px 0;
 }
+
 
 article h4 {
     border-bottom: 1px solid #02b8dd;
@@ -273,6 +297,7 @@ figure {
   background: #f5f5f5;
   border: 2px solid #999;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 figure img {
@@ -293,6 +318,7 @@ figcaption {
   /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
   transition: all .5s;
+
 }
 
 figure:hover figcaption {
@@ -344,7 +370,7 @@ section footer p {
 /*
   displays and styles 'label' tags (for radio button 'input' tags)
 */
-label {
+#videos label {
   display: block;
   box-sizing: border-box;
   float: left;
@@ -356,14 +382,20 @@ label {
   background: #eee;
   line-height: 3em;
   border-right: 1px solid #02b8dd;
+  border-left: 1px solid #02b8dd;
+  border-radius: 10px;
 }
+
 /* Text inside label */
-label span {
+#videos label span {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
 }
-label:last-child {
+#videos label:first-of-type {
+  border-left: none;
+}
+#videos label:last-of-type {
   border-right: none;
 }
 
@@ -438,9 +470,12 @@ label:last-child {
       padding: 0 10px;
       width: 940px;
   }
-
+    nav {
+      width: 97.5%
+    }
   	nav .navWide {
   		display: block;
+      width: 100%;
   	}
 
   	nav .navNarrow {
@@ -565,14 +600,14 @@ label:last-child {
         padding: 0 0 20px 0;
     }
 
-    #contact-us {
+    #updates {
         padding: 5px 0;
         text-align: center;
     }
-    #contact-us article {
+    #updates article {
       padding-top: 10px;
     }
-    #contact-us h3 {
+    #updates h3 {
         display: block;
         margin: 0 auto 20px auto;
         width: 400px;
@@ -580,6 +615,15 @@ label:last-child {
         padding: 0 0 20px 0;
     }
 
+    #iframe1 {
+      height: 600px;
+    }
+    #iframe2 {
+      height: 600px;
+    }
+    #iframe3 {
+      height: 600px;
+    }
 
 
   }

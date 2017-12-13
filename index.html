@@ -15,16 +15,17 @@
 <body>
 <header>
   <nav>
-    <div class="navWide">
+      <div class="navWide">
       <div class="wideDiv">
         <a href="#main-img">Home</a>
         <a href="#teams">Teams</a>
         <a href="#events">Events</a>
         <a href="#videos">Videos</a>
         <a href="#pictures">Pictures</a>
-        <a href="#contact-us">Contact Us</a>
+        <a href="#updates">updates</a>
       </div>
     </div>
+
     <div class="navNarrow">
       <i class="fa fa-bars fa-2x"></i>
       <h4>Menu</h4>
@@ -34,7 +35,7 @@
         <a href="#events">Events</a>
         <a href="#videos">Videos</a>
         <a href="#pictures">Pictures</a>
-        <a href="#contact-us">Contact Us</a>
+        <a href="#updates">updates</a>
       </div>
     </div>
   </nav>
@@ -115,21 +116,21 @@
               <header>
                 <h2>Video 1</h2>
               </header>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/VgzqbE3EwDk"></iframe>
+              <iframe id="iframe1" width="560" height="315" src="https://www.youtube.com/embed/VgzqbE3EwDk"></iframe>
             </section>
             <!-- Second tab-->
             <section id="content2" class="tab-content">
               <header>
                 <h2>Video 2</h2>
               </header>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KPxJ6RR40ZU"></iframe>
+            <iframe id="iframe2" width="560" height="315" src="https://www.youtube.com/embed/KPxJ6RR40ZU"></iframe>
           </section>
           <!-- Third tab-->
           <section id="content3" class="tab-content">
             <header>
               <h2>Video 3</h2>
             </header>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/KPxJ6RR40ZU"></iframe>
+          <iframe id="iframe3" width="560" height="315" src="https://www.youtube.com/embed/KPxJ6RR40ZU"></iframe>
         </section>
 
           </article>
@@ -145,7 +146,8 @@
                <figure>
                  <img src="https://lorempixel.com/200/300/" alt="placeholder"/>
                  <figcaption>
-                   A caption with more details about the image, in this case up to three lines but no more
+                   <h3> Caption Header </h3>
+                   <p>A caption with more details about the image, in this case up to three lines but no more</p>
                  </figcaption>
                </figure>
       	      </div>
@@ -220,13 +222,19 @@
       </div>
     </div>
 
-	  <div id="contact-us">
+	  <div id="updates">
       <div class="wrapper">
         <article>
-          <h3>Contact Us</h3>
+          <h3>Updates</h3>
+          <p>Enter your email below to be sent any updates:</p>
+            <p><span id="my-name"></span></p>
+
+            <form id="get-name" action="#" method="post">
+              <label id="updates1" for="user-name">Enter email:</label>
+              <input type="text" id="user-name" placeholder="Enter email">
+              <input type="submit">
+            </form>
         </article>
-        <article></article>
-        <article></article>
 
 
 
@@ -240,72 +248,9 @@
       </div>
     </footer>
 
-
-
-    <!-- <div id="container"</div>
-      <main class="tab_container">
-        <input id="tab1" type="radio" name="tabs" checked>
-     the *label* for the radio button forms the clickable tabs
-        <label for="tab1"><i class="fa fa-code"></i><span>Home</span></label>
-
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2"><i class="fa fa-hashtag"></i><span>Events</span></label>
-
-        <input id="tab3" type="radio" name="tabs">
-        <label for="tab3"><i class="fa fa-bug"></i><span>Teams</span></label>
-
-        <input id="tab4" type="radio" name="tabs">
-        <label for="tab4"><i class="fa fa-bug"></i><span>Stats</span></label>
-
-     content for tab1:
-        <section id="content1" class="tab-content">
-          <header>
-            <h2>Home</h2>
-          </header>
-
-          <footer>
-            <p><a href="#">add a link to an HTML5 resource here</a></p>
-          </footer>
-        </section>
-
-
-    content for tab2:
-        <section id="content2" class="tab-content">
-          <header>
-            <h2>Events</h2>
-          </header>
-
-            <footer>
-              <p><a href="#">add a link to an HTML5 resource here</a></p>
-            </footer>
-        </section>
-
-
-      content for tab 3:
-      <section id="content3" class="tab-content">
-        <header>
-          <h2>Teams</h2>
-        </header>
-
-        <footer>
-          <p><a href="#">add a link to an HTML5 resource here</a></p>
-        </footer>
-      </section>
-
-      content for tab4:
-          <section id="content4" class="tab-content">
-            <header>
-              <h2>Stats</h2>
-            </header>
-
-              <footer>
-                <p><a href="#">add a link to an HTML5 resource here</a></p>
-              </footer>
-          </section> -->
-
-
           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh7ZgdAY37Trblw09wJTiuQNHA6_LhWvQ&callback=initMap"></script>
           <script src="js/mapscripts.js"></script>
           <script src="js/nav.js"></script>
+          <script src="js/enteremail.js"></script>
 </body>
 </html>
