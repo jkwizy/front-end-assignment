@@ -31,7 +31,7 @@
     }
 
     // Shows the name in "my-name":
-    myName.innerHTML = nameStored;
+    myName.innerHTML = "The email you entered is: " + nameStored;
 
     // Puts the name into localStorage:
     localStorage.name = nameStored;
