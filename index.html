@@ -14,8 +14,9 @@
 
 <body>
 <header>
+  <!-- Navigation menu - navWide for desktop, navnarrow for smaller -->
   <nav>
-      <div class="navWide">
+    <div class="navWide">
       <div class="wideDiv">
         <a href="#main-img">Home</a>
         <a href="#teams">Teams</a>
@@ -55,7 +56,6 @@
       <div class="wrapper">
         <article>
           <h3>Teams</h3>
-        </article>
         <ul>
             <li class="feature-1">
               <h4>Fnatic</h4>
@@ -81,8 +81,8 @@
               <h4>Ninjas in Pajamas</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
             </li>
-
         </ul>
+        </article>
       </div>
     </div>
 
@@ -230,9 +230,10 @@
             <p><span id="my-name"></span></p>
 
             <form id="get-name" action="#" method="post">
-              <label id="updates1" for="user-name">Enter email:</label>
-              <input type="text" id="user-name" placeholder="Enter email">
+              <label id="updates1" for="user-name">Enter email:
+              <input type="text" id="user-name" placeholder="Enter email" required="true">
               <input type="submit">
+              </label>
             </form>
         </article>
 

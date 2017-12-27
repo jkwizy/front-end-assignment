@@ -1,15 +1,18 @@
+/* mobile responsiveness */
 
 body {
     background-color: #fff;
     color: #777;
     font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    /*need margin bottom so footer doesn't overlap content, change to flexbox?*/
+    /*need margin bottom so footer doesn't overlap content*/
     margin-bottom: 20em;
 }
+
 p {
     line-height: 20px;
     margin-bottom: 20px;
 }
+
 h1 {
     font-family: 'Crete Round', serif;
     font-weight: bold;
@@ -17,6 +20,7 @@ h1 {
     font-size: 45px;
     margin-bottom: 20px;
 }
+
 h2 {
     font-weight: 300;
     color: #444;
@@ -25,6 +29,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 h3 {
     font-size: 30px;
     color: #444;
@@ -33,6 +38,7 @@ h3 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 h4 {
     font-size: 24px;
     color: #444;
@@ -40,22 +46,27 @@ h4 {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
 h5 {
     font-size: 15px;
     color: #444;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 a {
     text-decoration: none;
     color: #444;
 }
+
 a:hover {
     color: #02b8dd;
 }
+
 strong {
     font-weight: bold;
 }
+
 small {
     font-size: 13px;
     color: #777;
@@ -79,9 +90,7 @@ nav {
   width: 85%
 }
 
-
-
-
+/* CSS for nav, navwide=desktop, navnarrow=smaller, JS switches between */
 nav .navWide {
 	display: none;
 	margin: 0 auto;
@@ -116,6 +125,11 @@ nav .navNarrow .narrowLinks a {
   margin-top: 10px;
 }
 
+nav .navNarrow h4 {
+  margin: 0 0 0 60px;
+}
+
+/* Youtube video widths, !!removing sizes from html breaks sizing completely*/
 #iframe1 {
   width: 100%;
 }
@@ -126,24 +140,19 @@ nav .navNarrow .narrowLinks a {
   width: 100%;
 }
 
-nav .navNarrow h4 {
-  margin: 0 0 0 60px;
-}
-
+/* Hides menu dependant on size */
 .hidden {
   display: none;
 }
 
-#main-img {
-
-}
-
+/*Main image of site with text over*/
 #main-img h2 {
     margin-top: 50px;
     color: black;
     font-size: 34px;
 }
 
+/*Second section, teams*/
 #teams article {
   padding-top: 20px;
 }
@@ -185,6 +194,7 @@ nav .navNarrow h4 {
     margin-bottom: 50px;
 }
 
+/*third section, events, primarily google map*/
 #events {
     background-color: #f8fafa;
     padding: 60px 0;
@@ -200,13 +210,14 @@ nav .navNarrow h4 {
     margin: 20px 0;
 }
 
+/*google map sizing*/
 #map {
   height: 315px;
   width: 300px;
   margin: 0 auto 0 auto;
-
 }
 
+/*4th content, tab menu with 3 videos*/
 #videos {
     background-color: #f8fafa;
     padding: 60px 0;
@@ -219,6 +230,7 @@ nav .navNarrow h4 {
     padding: 0 0 20px 0;
 }
 
+/*5th section, flexbox containing pictures, actual flexbox code below*/
 #pictures {
     padding: 60px 0;
     text-align: center;
@@ -245,8 +257,7 @@ nav .navNarrow h4 {
     padding: 0 0 20px 0;
 }
 
-
-
+/*last content, form for submitting email*/
 #updates {
     padding: 5px 0;
     text-align: center;
@@ -261,13 +272,39 @@ nav .navNarrow h4 {
     padding: 0 0 20px 0;
 }
 
+#updates input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #02b8dd;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
+#updates input[type=submit],
+#updates input[type=button] {
+  background: #02b8dd;
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  color: #5c5c5c;
+}
+
+#updates input[type=submit]:hover,
+#updates input[type=button]:hover {
+  background: #1a85c6;
+  transform: scale(1.1);
+  color: black;
+}
+
+/*Fakes a section line inbetween content divs*/
 article h4 {
     border-bottom: 1px solid #02b8dd;
     padding-bottom: 20px;
 }
 
-
+/*footer used to return to top*/
 footer a:link,
 footer a:visited {
   color: #444;
@@ -315,22 +352,14 @@ figcaption {
   padding: .25em;
   transform: translateY(4em);
   background: #fff;
-  /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
   transition: all .5s;
-
 }
 
 figure:hover figcaption {
   transform: translateY(0em);
-  /* background: rgba( 255, 255, 255, .78 ); */
   opacity: .78;
 }
-
-
-
-/* respsonive menu*/
-
 
 .flex-container {
     display: flex;
@@ -340,12 +369,7 @@ figure:hover figcaption {
 	  box-sizing: border-box;
     }
 
-
-
-
 /*tab menu for videos */
-
-
 input[type="radio"] {
     display: none;
 }
@@ -367,9 +391,7 @@ section footer p {
   line-height: 1.5em;
   text-align: center;
 }
-/*
-  displays and styles 'label' tags (for radio button 'input' tags)
-*/
+
 #videos label {
   display: block;
   box-sizing: border-box;
@@ -386,7 +408,6 @@ section footer p {
   border-radius: 10px;
 }
 
-/* Text inside label */
 #videos label span {
   text-transform: uppercase;
   text-decoration: none;
@@ -399,27 +420,12 @@ section footer p {
   border-right: none;
 }
 
-/*
-  The radio button label tags form the 'tabs' used to show the
-  sections - when clicked, the input tag 'checked' attribute
-  becomes true, so the section tags with IDs 'content1-3' can
-  be targeted *in relation* to each radio button.
-
-  This changes the display of specific section elements (with
-  IDs 'content1-3') from 'none' to 'block', but *only when* the
-  associated and preceding (~) radio button becomes 'checked'.
-
-  For the CSS3 ~ selector see:
-  http://www.w3schools.com/cssref/sel_gen_sibling.asp
-*/
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3 {
   display: block;
 }
-/*
-  Styles label elements (tabs) *only* when they're 'checked'
-*/
+
 [id^="tab"]:checked + label {
   background: #ccc;
   color: #222;
@@ -435,58 +441,32 @@ section footer p {
   margin-right: 10px;
 }
 
-
-/* --------- Basic animation --------- */
-/*
-  this can all be commented out without
-  affecting the functionality of the tabs
-*/
-
 .tab_container section * {
   animation: fadeIn 0.7s ease-in-out;
 }
 
 @keyframes fadeIn {
-
   0% {
   	opacity: 0;
   }
-
   100% {
   	opacity: 1;
   }
-
 }
 
-
-
-
-
-/*RESPONSIVENESS*/
-
-@media only screen and (min-width: 1000px) {
-  .wrapper {
-      margin: 0 auto;
-      padding: 0 10px;
-      width: 940px;
-  }
+  /*RESPONSIVENESS*/
+  /*Tablet*/
+@media only screen and (min-width: 768px) {
     nav {
       width: 97.5%
     }
-  	nav .navWide {
-  		display: block;
-      width: 100%;
-  	}
-
-  	nav .navNarrow {
-  		display: none;
-  	}
-
+  /*brings image in for desktop*/
     #main-img {
         height: 580px;
         padding-top: 1px;
         background: #e8eced url('../img/main-img.jpg') no-repeat center;
     }
+
     #main-img h2 {
         margin: 180px 0 40px 0;
         color: white;
@@ -497,122 +477,29 @@ section footer p {
       color: #02b8dd;
     }
 
-    #teams article {
-      padding-top: 20px;
-    }
-    #teams h3 {
-        display: block;
-        margin: 0 auto 20px auto;
-        border-bottom: 1px solid #02b8dd;
-        padding: 0 0 20px 0;
-    }
-    #teams ul {
-        margin: 80px 0;
-    }
-
     #teams ul li {
-        width: 30%;
-        padding-top: 140px;
-        float: left;
-        margin-right: 10px;
-        text-align: center;
-    }
-    #teams ul li.feature-1 {
-        background: url('../img/fnatic-logo.jpg') no-repeat top center;
-    }
-    #teams ul li.feature-2 {
-        background: url('../img/vp-logo.jpg') no-repeat top center;
-    }
-    #teams ul li.feature-3 {
-        background: url('../img/navi-logo-resized.jpg') no-repeat top center;
-    }
-    #teams ul li.feature-4 {
-        background: url('../img/liquid-logo.jpg') no-repeat top center;
-    }
-    #teams ul li.feature-5 {
-        background: url('../img/penta-logo.jpg') no-repeat top center;
-    }
-    #teams ul li.feature-6 {
-        background: url('../img/nip-logo.jpg') no-repeat top center;
-        margin-bottom: 50px;
+        width: 45%;
     }
 
-    #events {
-        background-color: #f8fafa;
-        padding: 60px 0;
-        text-align: center;
-    }
     #events h3 {
-        display: block;
-        margin: 0 auto 20px auto;
         width: 400px;
-        border-bottom: 1px solid #02b8dd;
-        padding: 0 0 20px 0;
-    }
-    #events a img {
-        margin: 20px 0;
     }
 
     #map {
-      height: 315px;
       width: 560px;
       padding: 20px;
-      margin: 0 auto 0 auto;
     }
 
-    #videos {
-        background-color: #f8fafa;
-        padding: 60px 0;
-        text-align: center;
-    }
     #videos h3 {
-        display: block;
-        margin: 0 auto 20px auto;
         width: 400px;
-        border-bottom: 1px solid #02b8dd;
-        padding: 0 0 20px 0;
     }
 
-    #pictures {
-        padding: 60px 0;
-        text-align: center;
-    }
-
-    #pictures article {
-        width: 100%;
-        background-color: #f5f5f5;
-
-    }
-    #pictures article:first-child {
-        margin-right: 20px;
-    }
-    #pictures article .overlay {
-        background: rgba(255, 255, 255, .95);
-        height: 230px;
-        width: 190px;
-        padding: 20px;
-    }
     #pictures h3 {
-        display: block;
-        margin: 0 auto 20px auto;
         width: 400px;
-        border-bottom: 1px solid #02b8dd;
-        padding: 0 0 20px 0;
     }
 
-    #updates {
-        padding: 5px 0;
-        text-align: center;
-    }
-    #updates article {
-      padding-top: 10px;
-    }
     #updates h3 {
-        display: block;
-        margin: 0 auto 20px auto;
         width: 400px;
-        border-bottom: 1px solid #02b8dd;
-        padding: 0 0 20px 0;
     }
 
     #iframe1 {
@@ -624,6 +511,82 @@ section footer p {
     #iframe3 {
       height: 600px;
     }
-
-
   }
+
+  /*RESPONSIVENESS*/
+  /*Desktop*/
+  @media only screen and (min-width: 1000px) {
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 940px;
+    }
+
+      nav {
+        width: 97.5%
+      }
+
+    	nav .navWide {
+    		display: block;
+        width: 100%;
+    	}
+
+    	nav .navNarrow {
+    		display: none;
+    	}
+
+  /*brings image in for desktop*/
+      #main-img {
+          height: 580px;
+          padding-top: 1px;
+          background: #e8eced url('../img/main-img.jpg') no-repeat center;
+      }
+
+      #main-img h2 {
+          margin: 180px 0 40px 0;
+          color: white;
+          font-size: 70px;
+      }
+
+      #main-img span.color {
+        color: #02b8dd;
+      }
+
+      #teams ul li {
+          width: 30%;
+      }
+
+      #events h3 {
+          width: 400px;
+      }
+
+      #map {
+        width: 560px;
+        padding: 20px;
+      }
+
+      #videos h3 {
+          width: 400px;
+      }
+
+      #pictures h3 {
+          width: 400px;
+      }
+
+
+      #updates h3 {
+          width: 400px;
+      }
+
+      #iframe1 {
+        height: 600px;
+      }
+
+      #iframe2 {
+        height: 600px;
+      }
+      
+      #iframe3 {
+        height: 600px;
+      }
+    }
