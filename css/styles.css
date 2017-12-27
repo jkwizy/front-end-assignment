@@ -174,23 +174,23 @@ nav .navNarrow h4 {
     text-align: center;
 }
 #teams ul li.feature-1 {
-    background: url('../img/fnatic-logo.jpg') no-repeat top center;
+    background: url('../img/teams/fnatic-logo.jpg') no-repeat top center;
 
 }
 #teams ul li.feature-2 {
-    background: url('../img/vp-logo.jpg') no-repeat top center;
+    background: url('../img/teams/vp-logo.jpg') no-repeat top center;
 }
 #teams ul li.feature-3 {
-    background: url('../img/navi-logo-resized.jpg') no-repeat top center;
+    background: url('../img/teams/navi-logo-resized.jpg') no-repeat top center;
 }
 #teams ul li.feature-4 {
-    background: url('../img/liquid-logo.jpg') no-repeat top center;
+    background: url('../img/teams/liquid-logo.jpg') no-repeat top center;
 }
 #teams ul li.feature-5 {
-    background: url('../img/penta-logo.jpg') no-repeat top center;
+    background: url('../img/teams/penta-logo.jpg') no-repeat top center;
 }
 #teams ul li.feature-6 {
-    background: url('../img/nip-logo.jpg') no-repeat top center;
+    background: url('../img/teams/nip-logo.jpg') no-repeat top center;
     margin-bottom: 50px;
 }
 
@@ -288,12 +288,12 @@ nav .navNarrow h4 {
   background: #02b8dd;
   padding: 8px 10px 8px 10px;
   border-radius: 5px;
-  color: #5c5c5c;
+  color: white;
 }
 
 #updates input[type=submit]:hover,
 #updates input[type=button]:hover {
-  background: #1a85c6;
+  background: #02b8dd;
   transform: scale(1.1);
   color: black;
 }
@@ -585,7 +585,7 @@ section footer p {
       #iframe2 {
         height: 600px;
       }
-      
+
       #iframe3 {
         height: 600px;
       }
