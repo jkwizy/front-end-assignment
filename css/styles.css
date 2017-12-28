@@ -157,11 +157,14 @@ nav .navNarrow h4 {
 #teams article {
   padding-top: 20px;
 }
+
 #teams h3 {
   display: block;
   margin: 0 auto 20px auto;
+  border-bottom: 1px solid #02b8dd;
   padding: 0 0 20px 0;
 }
+
 #teams ul {
   margin: 80px 0;
 }
@@ -310,6 +313,11 @@ article h4 {
   padding-bottom: 20px;
 }
 
+/* Removes section line specifically for the team list*/
+li h4 {
+  border-bottom: none;
+}
+
 /*footer used to return to top*/
 footer a:link,
 footer a:visited {
@@ -324,7 +332,6 @@ footer {
   bottom: 0;
   background: #ccc;
   width: 100%;
-
 }
 
 footer p {
@@ -402,6 +409,7 @@ section footer p {
   text-align: center;
 }
 
+/* label+styling for tab container on videos content*/
 #videos label {
   display: block;
   box-sizing: border-box;
@@ -474,7 +482,7 @@ section footer p {
   nav {
     width: 97.5%
   }
-  /*brings image in for desktop*/
+  /*brings image in for tablet+desktop*/
   #main-img {
     height: 580px;
     padding-top: 1px;
@@ -545,10 +553,6 @@ section footer p {
     width: 940px;
   }
 
-  nav {
-    width: 97.5%
-  }
-
   nav .navWide {
   	display: block;
     width: 100%;
@@ -558,63 +562,12 @@ section footer p {
   	display: none;
   }
 
-  /*brings image in for desktop*/
-  #main-img {
-    height: 580px;
-    padding-top: 1px;
-    background: #e8eced url('../img/main-img.jpg') no-repeat center;
-  }
-
-  #main-img h2 {
-    margin: 180px 0 40px 0;
-    color: white;
-    font-size: 70px;
-  }
-
-  #main-img span.color {
-    color: #02b8dd;
-  }
-
   #teams ul li {
     width: 30%;
-  }
-
-  #events h3 {
-    width: 400px;
-  }
-
-  #map {
-    width: 560px;
-    padding: 20px;
-  }
-
-  #videos h3 {
-    width: 400px;
-  }
-
-  #pictures h3 {
-    width: 400px;
-  }
-
-
-  #updates h3 {
-    width: 400px;
   }
 
   .flex-container {
     width: 100%;
     margin-left: 0;
-  }
-
-  #iframe1 {
-    height: 600px;
-  }
-
-  #iframe2 {
-    height: 600px;
-  }
-
-  #iframe3 {
-    height: 600px;
   }
 }
