@@ -22,7 +22,8 @@
     <a href="#bookmark">Events</a>
     <a href="#videos">Videos</a>
     <a href="#pictures">Pictures</a>
-    <a href="#updates">updates</a>
+    <a href="#news">News</a>
+    <a href="#updates">Updates</a>
     </div>
   </div>
 
@@ -35,7 +36,8 @@
     <a href="#bookmark">Events</a>
     <a href="#videos">Videos</a>
     <a href="#pictures">Pictures</a>
-    <a href="#updates">updates</a>
+    <a href="#news">News</a>
+    <a href="#updates">Updates</a>
     </div>
   </div>
   </nav>
@@ -87,11 +89,10 @@
   <!-- Events section (maps with pings of past events) -->
   <div id="events">
     <div class="wrapper">
-      <div id="bookmark"></div>
-    <article>
-      <h3>Past LAN Events</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
-        <div id="map"></div>
+      <article>
+        <h3>Past LAN Events</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
+          <div id="map"></div>
       </article>
     </div>
   </div>
@@ -222,6 +223,23 @@
     </div>
   </div>
 
+<!-- new content - searches guardian using api to return stories -->
+  <div id="news">
+    <div class="wrapper">
+    <article>
+      <h3>News</h3>
+        <p><strong>Use the form below to search the guardian for any news stories on the entered text.</strong> </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
+        <form id="searchForm">
+          <label for="quardQuery">Search the Guardian for: </label>
+          <input id="guardQuery" type="text" placeholder="Esports" required>
+          <input type="submit">
+        </form>
+
+        <ul id="demo"></ul>
+      </article>
+    </div>
+  </div>
+
   <!-- updates content - form to enter email -->
   <div id="updates">
     <div class="wrapper">
@@ -243,13 +261,14 @@
   <!-- footer makes use of back to top button -->
   <footer>
     <div class="wrapper">
-    <p><a href="#top">Click here to return to top</a></p>
+      <p><a href="#top">Click here to return to top</a></p>
     </div>
   </footer>
 
   <!-- JS scripts -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh7ZgdAY37Trblw09wJTiuQNHA6_LhWvQ&callback=initMap"></script>
   <script src="js/mapscripts.js"></script>
+  <script src="js/guardianscript.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/enteremail.js"></script>
 </body>

@@ -99,3 +99,4 @@ Both my CSS and HTML validate with no errors in a HTML5 and CSS3 validator from 
 * Font Awesome - http://fontawesome.io/
 * Flexbox Help - https://www.sketchingwithcss.com/samplechapter/cheatsheet.html
 * Div Wrapper - https://css-tricks.com/best-way-implement-wrapper-css/
+* JavaScript back to top button (Couldn't get to work) - https://coderwall.com/p/hujlhg/smooth-scrolling-without-jquery
