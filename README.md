@@ -9,6 +9,7 @@ To start the whole assignment I began by designing some layouts which I could th
 For my SPA design my initial thought was that I wanted several different content sections all in a vertical column, the nav would be a horizontal bar next to the website title. This would be at the very top of the page, followed by a main image with another subheading in the center of this image. Each content section would come after this, however, at this point I had no idea what content I would include so these are just empty boxes. The page would display content based on the breakpoints used - for example, a mobile breakpoint would cause images or text to be limited to 1 per column, a tablet breakpoint 2 images or section of text per row and desktop 4. Due to it being a SPA the website would need the navigation bar to link directly to each content section, but this can be done with the CSS. An initial design of the idea made in Photoshop can be seen here.  
 ![SPA design idea](/docs/img/spaDesign.png)
 
+This was the wireframe for my single page site done after I'd decided I was going to do a single page site.
 ![SPA wireframe](/docs/img/wireframe.png)
 
 ##### Multi-page design
@@ -61,6 +62,7 @@ There is no site map included because the website is based on a single page. A s
 
 
 ## Testing
+**Map doesn't display on first load through GitHub - works fine on reload, not sure how to fix this**
 #### General Testing
 My website was tested throughout development in Firefox and has resulted in everything important working as expected with no known issues. As far as I can see the website also has no issues in Chrome. These are the only two browsers the site has been tested on.
 One small issue which I had problems fixing was to do with the Google Map. If you resized the window, allowing a smaller breakpoint to activate, i.e. desktop to tablet, the focus on the map moves away from the center of the pointers. It isn't a big problem as its easy to refocus yourself and not many people will readjust the sizes of their browser while viewing it so I didn't spend time trying to find a fix.

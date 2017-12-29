@@ -1,5 +1,5 @@
 /* mobile responsiveness */
-
+/*General styles*/
 body {
   background-color: #fff;
   color: #777;
@@ -261,6 +261,7 @@ nav .navNarrow h4 {
   padding: 0 0 20px 0;
 }
 
+/*6th content, news section containing guardian api which links to stories*/
 #news {
   background-color: #f8fafa;
   padding: 60px 0;
