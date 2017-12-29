@@ -130,6 +130,11 @@ nav .navNarrow h4 {
   margin: 0 0 0 60px;
 }
 
+/* Hides menu dependant on size */
+.hidden {
+  display: none;
+}
+
 /* Youtube video widths, !!removing sizes from html breaks sizing completely*/
 #iframe1 {
   width: 100%;
@@ -139,11 +144,6 @@ nav .navNarrow h4 {
 }
 #iframe3 {
   width: 100%;
-}
-
-/* Hides menu dependant on size */
-.hidden {
-  display: none;
 }
 
 /*Main image of site with text over*/
@@ -211,9 +211,7 @@ nav .navNarrow h4 {
   padding: 0 0 20px 0;
 }
 
-#events a img {
-  margin: 20px 0;
-}
+
 
 /*google map sizing*/
 #map {
@@ -564,6 +562,11 @@ section footer p {
 
   #teams ul li {
     width: 30%;
+  }
+
+  #map {
+    width: 880px;
+    height: 500px;
   }
 
   .flex-container {

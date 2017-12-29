@@ -7,6 +7,7 @@
   <title>Front End Assignment</title>
 
   <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome used just for hamburger+yt nav icon -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -18,7 +19,7 @@
     <div class="wideDiv">
     <a href="#main-img">Home</a>
     <a href="#teams">Teams</a>
-    <a href="#events">Events</a>
+    <a href="#bookmark">Events</a>
     <a href="#videos">Videos</a>
     <a href="#pictures">Pictures</a>
     <a href="#updates">updates</a>
@@ -31,7 +32,7 @@
     <div class="narrowLinks hidden">
     <a href="#main-img">Home</a>
     <a href="#teams">Teams</a>
-    <a href="#events">Events</a>
+    <a href="#bookmark">Events</a>
     <a href="#videos">Videos</a>
     <a href="#pictures">Pictures</a>
     <a href="#updates">updates</a>
@@ -86,6 +87,7 @@
   <!-- Events section (maps with pings of past events) -->
   <div id="events">
     <div class="wrapper">
+      <div id="bookmark"></div>
     <article>
       <h3>Past LAN Events</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
@@ -113,21 +115,24 @@
       <!-- First tab-->
       <section id="content1" class="tab-content">
         <header>
-        <h2>Video 1</h2>
+        <!-- Change based on current video1 -->
+        <h2>ELeague Major 2017 Fragmovie</h2>
         </header>
         <iframe id="iframe1" width="560" height="315" src="https://www.youtube.com/embed/u6oee0pvisQ"></iframe>
       </section>
       <!-- Second tab-->
       <section id="content2" class="tab-content">
         <header>
-        <h2>Video 2</h2>
+          <!-- Change based on current video2 -->
+        <h2>ESL One Cologne 2016 Highlights</h2>
         </header>
         <iframe id="iframe2" width="560" height="315" src="https://www.youtube.com/embed/Lna2fC93EXM"></iframe>
       </section>
       <!-- Third tab-->
       <section id="content3" class="tab-content">
         <header>
-        <h2>Video 3</h2>
+          <!-- Change based on current video3 -->
+        <h2>Best of PGL Major Krakow 2017</h2>
         </header>
         <iframe id="iframe3" width="560" height="315" src="https://www.youtube.com/embed/4HsS5fwGgI4"></iframe>
       </section>
@@ -227,9 +232,9 @@
 
       <form id="get-name" action="#" method="post">
         <label id="updates1" for="user-name">Enter email:
-        <input type="text" id="user-name" placeholder="Enter email" required="true">
-        <input type="submit">
+        <input type="text" id="user-name" placeholder="Enter email" required>
         </label>
+        <input type="submit">
       </form>
     </article>
     </div>
